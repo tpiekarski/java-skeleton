@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Project: JavaSandbox
+  Github:  https://github.com/tpiekarski/JavaSandbox
+  
+  This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+  If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+  Furthermore, this source code is using the DAZ Studio SDK which is not subject to this license, it
+  is only distributed in object code form and the End User License Agreement (EULA) can be obtained at:
+  http://docs.daz3d.com/doku.php/public/software/dazstudio/4/referenceguide/scripting/eula/start
+  
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>de.dlqx</groupId>
+  <artifactId>sandbox</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>sandbox</name>
+  <url>http://maven.apache.org</url>
+  
+  <licenses>
+    <license>
+      <name>Mozilla Public License</name>
+      <url>https://www.mozilla.org/en-US/MPL/2.0/</url>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+      <id>tpiekarski</id>
+      <name>Thomas Piekarski</name>
+      <email>t.piekarski@deloquencia.de</email>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.java.version>1.8</project.java.version>
+    
+    <junit.jupiter.version>5.3.2</junit.jupiter.version>
+    <maven.compiler.source>${project.java.version}</maven.compiler.source>
+    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    <maven.surefire.version>2.22.1</maven.surefire.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven.surefire.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

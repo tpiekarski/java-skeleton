@@ -1,0 +1,17 @@
+target/
+
+.project
+.metadata
+.settings/
+.classpath
+.loadpath
+local.properties
+*.launch
+.factorypath
+.tern-project
+.springBeans
+
+*.tmp
+*.bak
+*.swp
+*~.nib
