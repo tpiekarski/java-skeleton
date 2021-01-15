@@ -1,5 +1,5 @@
-# Java Sandbox
-*A simple skeleton for rapid Test Driven Prototyping and Experiments (TDP+E) with Java SE and EE*
+# java-skeleton
+*A simple skeleton for rapid Test Driven Prototyping and Experiments with Java SE and EE*
 
 ## Branches
 - JavaSE
@@ -18,5 +18,5 @@
 ## Test, Build and Run
 ```
 mvn clean test package verify
-java -cp target\sandbox-0.0.1-SNAPSHOT.jar de.dlqx.sandbox.App
+java -cp target\skeleton-0.0.1-SNAPSHOT.jar de.dlqx.skeleton.App
 ```
